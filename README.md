@@ -1,7 +1,7 @@
 # e2c2-fsh-modeling
 FHIR Modeling of a Cancer Symptom Control Domain
-* The E2C2 models are authored using the FHIR Shorthand [(FSH) tools](https://fshschool.org/docs/introduction/)
-* The E2C2 models are extended from the minimal Common Oncology Data Elements [(mCODE) model](http://hl7.org/fhir/us/mcode/index.html)
+* The profiles are authored using the FHIR Shorthand [(FSH) tools](https://fshschool.org/docs/introduction/)
+* The profiles are extended from the minimal Common Oncology Data Elements [(mCODE) model](http://hl7.org/fhir/us/mcode/index.html)
 * This is a collaboration with the the enhanced EHR-facilitated cancer symptom control [(E2C2) project](https://pubmed.ncbi.nlm.nih.gov/32503661/)
 
 ## extensions
