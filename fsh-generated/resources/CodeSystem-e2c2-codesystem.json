@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "E2C2CodeSystem",
+  "id": "e2c2-codesystem",
+  "description": "Indicates specific data elements defined in the E2C2 use case.",
+  "version": "20220203",
+  "url": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+  "concept": [
+    {
+      "code": "time_since_last_hospitalization",
+      "display": "Time since last hospitalization",
+      "definition": "Time since last hospitalization"
+    },
+    {
+      "code": "reason_for_last_hospitalization",
+      "display": "Reason(s) for last hospitalization",
+      "definition": "Reason(s) for last hospitalization"
+    },
+    {
+      "code": "duration_of_last_hospitalization",
+      "display": "Duration of last hospitalization",
+      "definition": "Duration of last hospitalization"
+    },
+    {
+      "code": "total_number_of_hospitalization",
+      "display": "Total number of hospitalizations within the past year",
+      "definition": "Total number of hospitalizations within the past year"
+    },
+    {
+      "code": "time_since_last_emergency_department_visit",
+      "display": "Time since last emergency department visit",
+      "definition": "Time since last emergency department visit"
+    },
+    {
+      "code": "reason_for_last_emergency_department_visit",
+      "display": "Reason(s) for  last emergency department visit",
+      "definition": "Reason(s) for last emergency department visitn"
+    },
+    {
+      "code": "total_number_of_emergency_department_visits",
+      "display": "Total number of  emergency department visits in the past year",
+      "definition": "Total number of  emergency department visits in the past year"
+    },
+    {
+      "code": "symptom_score",
+      "display": "Symptom score of a cancer patient",
+      "definition": "Symptom score of a cancer patient from a survey"
+    },
+    {
+      "code": "time_since_cancer_diagnosis",
+      "display": "Time since cancer diagnosis",
+      "definition": "Time since cancer diagnosis"
+    },
+    {
+      "code": "time_since_cancer_recurrence",
+      "display": "Time since cancer recurrence",
+      "definition": "Time since cancer recurrence"
+    },
+    {
+      "code": "time_lived_with_metastatic_disease",
+      "display": "Time lived with metastatic disease",
+      "definition": "Time lived with metastatic disease"
+    }
+  ],
+  "experimental": false,
+  "date": "2022-02-03",
+  "caseSensitive": true,
+  "count": 11
+}

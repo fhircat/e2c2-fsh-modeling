@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "EmploymentStatusCodeSystem",
+  "id": "employment-status-codesystem",
+  "description": "Indicates employment status defined in the E2C2 use case.",
+  "version": "20220203",
+  "url": "http://hl7.org/fhir/us/mcode/CodeSystem/employment-status-codesystem",
+  "concept": [
+    {
+      "code": "Employed",
+      "display": "Employed",
+      "definition": "Employed"
+    },
+    {
+      "code": "NotInLaborForce",
+      "display": "Not in Labor Force",
+      "definition": "Not employed and not seeking employment"
+    },
+    {
+      "code": "Unemployed",
+      "display": "Unemployed",
+      "definition": "Unemployed"
+    }
+  ],
+  "experimental": false,
+  "date": "2022-02-03",
+  "caseSensitive": true,
+  "valueSet": "http://fhircat.org/fhir/ValueSet/employment-status-codesystem",
+  "count": 3
+}

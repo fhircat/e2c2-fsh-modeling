@@ -1,0 +1,10 @@
+canonical: http://hl7.org/fhir/us/mcode
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: hl7.fhir.us.mcode
+name: HL7FHIRImplementationGuideminimalCommonOncologyDataElementsmCODERelease1USRealmSTU1
+status: active
+version: 1.0.0
+dependencies:
+  hl7.fhir.us.core: 3.1.0

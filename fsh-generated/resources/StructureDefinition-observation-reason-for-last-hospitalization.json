@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-reason-for-last-hospitalization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-reason-for-last-hospitalization",
+  "version": "1.0.0",
+  "name": "ReasonForLastHospitalization",
+  "title": "Observation Reason for Last Hospitalization",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-02-04",
+  "publisher": "FHIRCat R01 Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhircat.org/fhircat"
+        }
+      ]
+    }
+  ],
+  "description": "E2C2 Observation Reason for Last Hospitalization Profile",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "E2C2 Observation Reason for Last Hospitalization Profile",
+        "definition": "This profile defines reason for last hospitalization."
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Reason for  Last Hospitalization",
+        "definition": "Reason for Last Hospitalization",
+        "comment": "Reason for Last Hospitalization."
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:ReasonForLastHospitalizationCode",
+        "path": "Observation.code.coding",
+        "sliceName": "ReasonForLastHospitalizationCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:ReasonForLastHospitalizationCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem"
+      },
+      {
+        "id": "Observation.code.coding:ReasonForLastHospitalizationCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "reason_for_last_hospitalization"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.valueString",
+        "path": "Observation.valueString",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

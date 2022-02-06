@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FinancialConcernCodeSystem",
+  "id": "financial-concern-codesystem",
+  "description": "Indicates financial concern defined in the E2C2 use case.",
+  "version": "20220203",
+  "url": "http://hl7.org/fhir/us/mcode/CodeSystem/financial-concern-codesystem",
+  "concept": [
+    {
+      "code": "yes",
+      "display": "Yes, there is a concern",
+      "definition": "There is a concern about current financial status"
+    },
+    {
+      "code": "no",
+      "display": "No, there is no concern",
+      "definition": "There is no concern about current financial status"
+    },
+    {
+      "code": "nknown",
+      "display": "Uknown",
+      "definition": "Unkown"
+    }
+  ],
+  "experimental": false,
+  "date": "2022-02-03",
+  "caseSensitive": true,
+  "valueSet": "http://fhircat.org/fhir/ValueSet/financial-concern-codesystem",
+  "count": 3
+}

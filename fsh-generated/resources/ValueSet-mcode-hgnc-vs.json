@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HGNCVS",
+  "id": "mcode-hgnc-vs",
+  "title": "HUGO Gene Nomenclature Committee Gene Names Value Set",
+  "description": "HUGO Gene Nomenclature Committee Gene Names Value Set",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-hgnc-vs",
+  "date": "2020-03-18T16:05:09+00:00",
+  "publisher": "HL7 International Clinical Interoperability Council",
+  "contact": [
+    {
+      "name": "HL7 International Clinical Interoperability Council",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cic"
+        },
+        {
+          "system": "email",
+          "value": "ciclist@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.genenames.org/geneId"
+      }
+    ]
+  }
+}

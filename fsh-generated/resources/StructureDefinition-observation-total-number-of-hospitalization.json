@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-total-number-of-hospitalization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-total-number-of-hospitalization",
+  "version": "1.0.0",
+  "name": "TotalNumberOfHospitalization",
+  "title": "Observation Total Number of Hospitalization",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-02-04",
+  "publisher": "FHIRCat R01 Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhircat.org/fhircat"
+        }
+      ]
+    }
+  ],
+  "description": "E2C2 Observation Total Number of Hospitalization Profile",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "E2C2 Observation Total Number of Hospitalization Profile",
+        "definition": "This profile defines total number of hospitalization."
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Total Number of Hospitalization",
+        "definition": "Total Number of Hospitalization within the past year",
+        "comment": "Total Number of Hospitalization."
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:TotalNumberOfHospitalizationCode",
+        "path": "Observation.code.coding",
+        "sliceName": "TotalNumberOfHospitalizationCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:TotalNumberOfHospitalizationCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem"
+      },
+      {
+        "id": "Observation.code.coding:TotalNumberOfHospitalizationCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "total_number_of_hospitalization"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.valueInteger",
+        "path": "Observation.valueInteger",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

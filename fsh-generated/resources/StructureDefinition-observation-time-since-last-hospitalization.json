@@ -1,0 +1,182 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-time-since-last-hospitalization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-time-since-last-hospitalization",
+  "version": "1.0.0",
+  "name": "TimeSinceLastHospitalization",
+  "title": "Observation Time Since Last Hospitalization",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-02-03",
+  "publisher": "FHIRCat R01 Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhircat.org/fhircat"
+        }
+      ]
+    }
+  ],
+  "description": "E2C2 Observation Time Since Last Hospitalization Profile",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "E2C2 Observation Time Since Last Hospitalization Profile",
+        "definition": "This profile defines time since last hospitalization."
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Time Since Last Hospitalization",
+        "definition": "Time Since Last Hospitalization",
+        "comment": "Time Since Last Hospitalization.",
+        "alias": [
+          "Test",
+          "Name"
+        ]
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:TimeSinceLastHospitalizationCode",
+        "path": "Observation.code.coding",
+        "sliceName": "TimeSinceLastHospitalizationCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:TimeSinceLastHospitalizationCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem"
+      },
+      {
+        "id": "Observation.code.coding:TimeSinceLastHospitalizationCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "time_since_last_hospitalization"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.unit",
+        "path": "Observation.valueQuantity.unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "min": 1,
+        "fixedCode": "days",
+        "mustSupport": true
+      }
+    ]
+  }
+}
