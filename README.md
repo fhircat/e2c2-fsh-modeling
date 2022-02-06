@@ -20,12 +20,12 @@ FHIR Modeling of a Cancer Symptom Control Domain
 * Symptom Score - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/profiles/E2C2SymptomScore.fsh)
 
 ## code systems
-* E2C2 Code System - FSH(https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/E2C2CodeSystem.fsh)
-* Education Level Code System  - FSH(https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/EducationLevelCodeSystem.fsh)
-* Employment Status Code System - FSH(https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/EmploymentStatusCodeSystem.fsh)
-* Financial Concern Code System - FSH(https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/FinancialConcernCodeSystem.fsh)
+* E2C2 Code System - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/E2C2CodeSystem.fsh)
+* Education Level Code System  - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/EducationLevelCodeSystem.fsh)
+* Employment Status Code System - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/EmploymentStatusCodeSystem.fsh)
+* Financial Concern Code System - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/codesystems/FinancialConcernCodeSystem.fsh)
 
 ## valuesets
-* Education Status VS - FSH(https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/EducationStatusVS.fsh)
-* Empolymnet Status VS - FSH(https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/EmploymentStatusVS.fsh)
-* Financial Concern VS - FSH(https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/FinancialConcernVS.fsh)
+* Education Status VS - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/EducationStatusVS.fsh)
+* Empolymnet Status VS - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/EmploymentStatusVS.fsh)
+* Financial Concern VS - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/FinancialConcernVS.fsh)
