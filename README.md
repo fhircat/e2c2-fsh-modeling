@@ -10,6 +10,7 @@ FHIR Modeling of a Cancer Symptom Control Domain
 * Financial Concern - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/extensions/FinancialConcern.fsh)
 * Cancer Symptom Type - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/extensions/E2C2CancerSymptomType.fsh)
 ## profiles
+* Cancer Patient - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/profiles/CancerPatient.fsh)
 * Time Since Last Hosptialization - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/profiles/E2C2TimeSinceLastHospitalization.fsh)
 * Reason for Last Hospitalization - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/profiles/E2C2ReasonForLastHospitalization.fsh)
 * Duration of Last Hospitalization - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/profiles/E2C2DurationOfLastHospitalization.fsh)
