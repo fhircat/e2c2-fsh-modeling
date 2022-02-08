@@ -12,9 +12,11 @@ Description: "E2C2 Observation Symptom Score Profile"
 * . 0..*
 * . ^short = "E2C2 Observation Symptom Score Profile"
 * . ^definition = "This profile defines Symptom Score."
+* extension contains CancerSymptomType named symptomType 1..1
+* extension[symptomType].valueCodeableConcept from CancerSymptomTypeVS (required)
 * code ^short = "Symptom Score"
 * code ^definition = "Symptom Score of a cancer patient"
-* code ^comment = "TSymptom Score of a cancer patient."
+* code ^comment = "Symptom Score of a cancer patient."
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "code"
 * code.coding ^slicing.discriminator[+].type = #value

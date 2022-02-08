@@ -65,6 +65,51 @@
   "differential": {
     "element": [
       {
+        "id": "Patient.extension:educationStatus",
+        "path": "Patient.extension",
+        "sliceName": "educationStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/e2c2-education-status"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:employmentStatus",
+        "path": "Patient.extension",
+        "sliceName": "employmentStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/e2c2-employment-status"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:financialConcern",
+        "path": "Patient.extension",
+        "sliceName": "financialConcern",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/e2c2-financial-concern"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.deceased[x]",
         "path": "Patient.deceased[x]",
         "mustSupport": true

@@ -12,3 +12,9 @@ Description: "A patient who has been diagnosed with or is receiving medical trea
 * ^contact.telecom[+].system = #email
 * ^contact.telecom[=].value = "ciclist@lists.HL7.org"
 * deceased[x] MS
+* extension contains EducationStatus named educationStatus 0..1
+* extension[educationStatus].valueCodeableConcept from EducationStatusVS (required)
+* extension contains EmploymentStatus named employmentStatus 0..1
+* extension[employmentStatus].valueCodeableConcept from EmploymentStatusVS (required)
+* extension contains FinancialConcern named financialConcern 0..1
+* extension[financialConcern].valueCodeableConcept from FinancialConcernVS (required)

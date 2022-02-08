@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CancerSymptomTypeVS",
+  "id": "e2c2-cancer-symptom-type-vs",
+  "title": "Cancer Symptom Type Value Set",
+  "description": "The symptom type codes defined in the E2C2.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/us/mcode/ValueSet/e2c2-cancer-symptom-type-vs",
+  "date": "2022-02-08",
+  "publisher": "FHIRCat R01 Project",
+  "contact": [
+    {
+      "name": "FHIRCat R01 Project",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://fhircat.org/fhircat"
+        },
+        {
+          "system": "email",
+          "value": "fhircat@fhircat.org"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "118190003",
+            "display": "Sleep finding (finding)"
+          },
+          {
+            "code": "22253000",
+            "display": "Pain (finding)"
+          },
+          {
+            "code": "48694002",
+            "display": "Anxiety (finding)"
+          },
+          {
+            "code": "394924000",
+            "display": "Symptoms of depression (finding)"
+          },
+          {
+            "code": "84229001",
+            "display": "Fatigue (finding)"
+          },
+          {
+            "code": "165220001",
+            "display": "Disability assessment observations - physical (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}
