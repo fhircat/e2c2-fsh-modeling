@@ -8,7 +8,7 @@ FHIR Modeling of a Cancer Symptom Control Domain
 * Education Status - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/extensions/EducationStatus.fsh)
 * Empolymnet Status - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/extensions/EmploymentStatus.fsh)
 * Financial Concern - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/extensions/FinancialConcern.fsh)
-
+* Cancer Symptom Type - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/extensions/E2C2CancerSymptomType.fsh)
 ## profiles
 * Time Since Last Hosptialization - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/profiles/E2C2TimeSinceLastHospitalization.fsh)
 * Reason for Last Hospitalization - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/profiles/E2C2ReasonForLastHospitalization.fsh)
@@ -32,3 +32,4 @@ FHIR Modeling of a Cancer Symptom Control Domain
 * Education Status VS - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/EducationStatusVS.fsh)
 * Empolymnet Status VS - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/EmploymentStatusVS.fsh)
 * Financial Concern VS - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/FinancialConcernVS.fsh)
+* Cancer Symptom Type VS - [FSH](https://github.com/fhircat/e2c2-fsh-modeling/blob/main/input/fsh/valuesets/E2C2CancerSymptomTypeVS.fsh)
