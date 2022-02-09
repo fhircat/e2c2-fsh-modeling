@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "total-number-of-hospitalization-for-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-total-number-of-hospitalization"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+        "code": "total_number_of_hospitalization",
+        "display": "Total number of hospitalization within past year"
+      }
+    ],
+    "text": "Total number of hospitalization within past year"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "e2c2_prediction_variable",
+          "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+          "display": "E2C2 prediction variable"
+        }
+      ],
+      "text": "E2C2 prediction variable"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/cancer-patient-jenny-m"
+  },
+  "effectiveDateTime": "2000-07-02",
+  "valueInteger": 2
+}

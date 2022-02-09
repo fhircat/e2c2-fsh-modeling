@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "time-since-last-hospitalization-for-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-time-since-last-hospitalization"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+        "code": "time_since_last_hospitalization",
+        "display": "Time since last hospitalization"
+      }
+    ],
+    "text": "Time since last hospitalization"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "days",
+    "value": 45,
+    "unit": "days"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "e2c2_prediction_variable",
+          "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+          "display": "E2C2 prediction variable"
+        }
+      ],
+      "text": "E2C2 prediction variable"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/cancer-patient-jenny-m"
+  },
+  "effectiveDateTime": "2000-07-02"
+}

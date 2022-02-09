@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "time-since-cancer-recurrence-for-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-time-since-cancer-recurrence"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+        "code": "time_since_cancer_recurrence",
+        "display": "Time since cancer recurrence"
+      }
+    ],
+    "text": "Time since cancer recurrence"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "days",
+    "value": 200,
+    "unit": "days"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "e2c2_prediction_variable",
+          "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+          "display": "E2C2 prediction variable"
+        }
+      ],
+      "text": "E2C2 prediction variable"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/cancer-patient-jenny-m"
+  },
+  "effectiveDateTime": "2000-07-02"
+}

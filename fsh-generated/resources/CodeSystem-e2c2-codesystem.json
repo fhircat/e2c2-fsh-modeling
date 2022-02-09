@@ -62,10 +62,15 @@
       "code": "time_lived_with_metastatic_disease",
       "display": "Time lived with metastatic disease",
       "definition": "Time lived with metastatic disease"
+    },
+    {
+      "code": "e2c2_prediction_variable",
+      "display": "E2C2 prediction variable",
+      "definition": "E2C2 prediction variable"
     }
   ],
   "experimental": false,
   "date": "2022-02-03",
   "caseSensitive": true,
-  "count": 11
+  "count": 12
 }

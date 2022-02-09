@@ -1,0 +1,148 @@
+{
+  "resourceType": "Patient",
+  "id": "cancer-patient-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2186-5",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Not Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    },
+    {
+      "extension": [
+        {
+          "url": "e2c2-education-status",
+          "valueCoding": {
+            "code": "BD",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+            "display": "College or baccalaureate degree complete"
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/e2c2-education-status"
+    },
+    {
+      "extension": [
+        {
+          "url": "e2c2-employment-status",
+          "valueCoding": {
+            "code": "Employed",
+            "system": "http://hl7.org/fhir/us/mcode/CodeSystem/employment-status-codesystem",
+            "display": "Employed"
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/e2c2-employment-status"
+    },
+    {
+      "extension": [
+        {
+          "url": "e2c2-financial-concern",
+          "valueCoding": {
+            "code": "no",
+            "system": "http://hl7.org/fhir/us/mcode/CodeSystem/financial-concern-codesystem",
+            "display": "No, there is no concern"
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/e2c2-education-status"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Medical Record Number"
+          }
+        ]
+      },
+      "system": "http://hospital.example.org",
+      "value": "MRN1234"
+    }
+  ],
+  "name": [
+    {
+      "family": "M",
+      "given": [
+        "Jenny"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1965-01-01",
+  "address": [
+    {
+      "line": [
+        "123 Main St"
+      ],
+      "city": "Anytown",
+      "postalCode": "12345",
+      "country": "United States"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "555-867-5309",
+          "use": "home"
+        },
+        {
+          "system": "email",
+          "value": "example@example.com"
+        }
+      ]
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "en-US",
+            "system": "urn:ietf:bcp:47"
+          }
+        ],
+        "text": "English"
+      }
+    }
+  ]
+}

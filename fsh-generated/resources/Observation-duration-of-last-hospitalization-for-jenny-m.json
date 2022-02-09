@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "duration-of-last-hospitalization-for-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-duration-of-last-hospitalization"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+        "code": "duration_of_last_hospitalization",
+        "display": "Duration of last hospitalization"
+      }
+    ],
+    "text": "Duration of last hospitalization"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "e2c2_prediction_variable",
+          "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+          "display": "E2C2 prediction variable"
+        }
+      ],
+      "text": "E2C2 prediction variable"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/cancer-patient-jenny-m"
+  },
+  "effectiveDateTime": "2000-07-02",
+  "valuePeriod": {
+    "start": "2000-06-02",
+    "end": "2000-06-09"
+  }
+}

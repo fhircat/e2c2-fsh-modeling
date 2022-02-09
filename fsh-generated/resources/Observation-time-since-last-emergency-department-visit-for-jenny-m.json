@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "time-since-last-emergency-department-visit-for-jenny-m",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/observation-time-since-last-emergency-department-visit"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+        "code": "time_since_last_emergency_department_visit",
+        "display": "Time since last eemergency department visit"
+      }
+    ],
+    "text": "Time since last emergency department visit"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "days",
+    "value": 90,
+    "unit": "days"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "e2c2_prediction_variable",
+          "system": "http://hl7.org/fhir/us/mcode/CodeSystem/e2c2-codesystem",
+          "display": "E2C2 prediction variable"
+        }
+      ],
+      "text": "E2C2 prediction variable"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/cancer-patient-jenny-m"
+  },
+  "effectiveDateTime": "2000-07-02"
+}
